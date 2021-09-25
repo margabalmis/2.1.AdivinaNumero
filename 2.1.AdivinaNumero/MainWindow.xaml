@@ -9,7 +9,7 @@
     <Grid>
         <TextBox x:Name="NumeroIntroducido" HorizontalAlignment="Left" Height="23" Margin="434,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
         <Button Content="Comprobar" HorizontalAlignment="Left" Margin="236,222,0,0" VerticalAlignment="Top" Width="121" Click="ComprobarButton_Click" Height="33" FontSize="16" Background="#FFE2D7F1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="190,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="227" Text="¿Qué número he pensado?" FontFamily="Sitka Text" TextAlignment="Center" FontSize="18"/>
+        <TextBlock x:Name="TextoInstrucciones" HorizontalAlignment="Left" Margin="190,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="227" Text="¿Qué número he pensado?" FontFamily="Sitka Text" TextAlignment="Center" FontSize="18"/>
         <Button Content="Reiniciar" HorizontalAlignment="Left" Margin="398,222,0,0" VerticalAlignment="Top" Width="121" Click="ReiniciarButton_Click" Height="33" FontSize="16" Background="#FFE2D7F1"/>
         <TextBlock x:Name="TextoComprobacion" HorizontalAlignment="Left" Margin="236,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="29" Width="283"/>
 

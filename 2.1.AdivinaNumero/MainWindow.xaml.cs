@@ -9,10 +9,11 @@ namespace _2._1.AdivinaNumero
     /// </summary>
     public partial class MainWindow : Window
     {
+        int numGenerado;
         public MainWindow()
         {
             InitializeComponent();
-            int numGenerado = GenerarNumero();
+            numGenerado = GenerarNumero();
         }
         private int GenerarNumero()
         {
