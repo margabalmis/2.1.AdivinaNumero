@@ -45,8 +45,8 @@ namespace _2._1.AdivinaNumero
         private void ReiniciarButton_Click(object sender, RoutedEventArgs e)
         {
             numGenerado = GenerarNumero();
-            numeroIntroducido.Text = "";
-            textoComprobacion.Text = "";
+            numeroIntroducido.Clear();
+            textoComprobacion.Text = string.Empty;
         }
         
     }
