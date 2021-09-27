@@ -25,26 +25,28 @@ namespace _2._1.AdivinaNumero
 
         private void ComprobarButton_Click(object sender, RoutedEventArgs e)
         {
-            int numAComprobar = int.Parse(NumeroIntroducido.Text);
+            int numAComprobar = int.Parse(numeroIntroducido.Text);
 
             if (numAComprobar > numGenerado)
             {
-                TextoComprobacion.Text = "Te has pasado";
+                textoComprobacion.Text = "Te has pasado";
             }
             else if (numAComprobar < numGenerado)
             {
-                TextoComprobacion.Text = "Te has quedado corto";
+                textoComprobacion.Text = "Te has quedado corto";
             }
             else
             {
-                TextoComprobacion.Text = "¡¡¡Has acertado!!!";
+                textoComprobacion.Text = "¡¡¡Has acertado!!!";
             }
 
         }
 
         private void ReiniciarButton_Click(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
+            numGenerado = GenerarNumero();
+            numeroIntroducido.Text = "";
+            textoComprobacion.Text = "";
         }
         
     }
